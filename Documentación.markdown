@@ -30,7 +30,7 @@ La base de datos cuenta con 3 tablas de almacenamiento:
 La Base de datos SQLite, los agentes y la API
 
 ### DER de la base de datos
-![] (Docs/DER.jpg)
+![](Docs/DER.jpg)
 
 # API Rest
 
