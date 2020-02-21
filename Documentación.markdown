@@ -36,27 +36,7 @@ La Base de datos SQLite, los agentes y la API
 ## Endpoints
 
 El método POST/servers recibe como parámetro un objeto json con el siguiente modelo:
-{
-   "arquitectura_proc": "x86", 
-   "marca_proc": "Intel", 
-   "procesos": [
-      {
-         "username": "juan", 
-         "pid": 1, 
-         "name": "python"
-      }
-   ], 
-   "usuarios_activos": [
-      {
-         "pid": 829, 
-         "name": "juan"
-      }
-   ], 
-   "nombre_so": "Linux", 
-   "version_so": "Debian", 
-   "ipaddress": "192.168.1.205", 
-   "fecha_hora": "2020-02-15 02:06:54.999999"
-}
+
 Devuelve como status el código 201 si pudo crear el servidor en la base de datos.
 Si ocurre algún error, devuelve como status el código 400
 
