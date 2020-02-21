@@ -6,9 +6,9 @@ Aplicación para obtener y centralizar información de los servidores que se enc
 
 ## Estructura del proyecto
 
-* ```/agente```: Contiene un script que se ejecuta en los servidores y envía información de estos a la API.
-* ```/api```: Contiene el script inicializador y los archivos de configuración de la aplicación junto con los controllers/routers inherentes a la API.
-* ```/createdb```: Contiene el script de creación de la base de datos normalizada.
+* ```/Agente```: Contiene un script que se ejecuta en los servidores y envía información de estos a la API.
+* ```/API```: Contiene el script inicializador y los archivos de configuración de la aplicación junto con los controllers/routers inherentes a la API.
+* ```/CreateDB```: Contiene el script de creación de la base de datos normalizada.
 
 
 ## Funcionamiento
