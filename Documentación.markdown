@@ -24,3 +24,39 @@ La base de datos cuenta con 3 tablas de almacenamiento:
 * ```Servers```: contiene ip del servidor, fecha y hora en que se envió la información, arquitectura y marca del procesador, nombre y versión del sistema operativo.
 * ```Procesos```: contiene ip del servidor,  fecha y hora en que se envió la información, id y nombre del procesos en ejecución, usuario que ejecutó el proceso e identificador del registro generado en la tabla Servers.
 * ```Usuarios_activos```: contiene ip del servidor,  fecha y hora en que se envió la información, nombre del usuario activo, id de proceso e identificador del registro generado en la tabla Servers.
+
+### Estructura general
+
+La Base de datos SQLite, los agentes y la API
+
+### DER de la base de datos
+ 
+# API Rest
+
+## Endpoints
+
+El método POST/servers recibe como parámetro un objeto json con el siguiente modelo:
+{
+   "arquitectura_proc": "x86", 
+   "marca_proc": "Intel", 
+   "procesos": [
+      {
+         "username": "juan", 
+         "pid": 1, 
+         "name": "python"
+      }
+   ], 
+   "usuarios_activos": [
+      {
+         "pid": 829, 
+         "name": "juan"
+      }
+   ], 
+   "nombre_so": "Linux", 
+   "version_so": "Debian", 
+   "ipaddress": "192.168.1.205", 
+   "fecha_hora": "2020-02-15 02:06:54.999999"
+}
+Devuelve como status el código 201 si pudo crear el servidor en la base de datos.
+Si ocurre algún error, devuelve como status el código 400
+
