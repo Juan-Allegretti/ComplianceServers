@@ -11,7 +11,7 @@ Aplicación para obtener y centralizar información de los servidores que se enc
 * ```/createdb```: Contiene el script de creación de la base de datos normalizada.
 
 
-## Cómo funciona?
+## Funcionamiento
 
 El programa agente obtiene información del servidor y la envía a la API. La información obtenida consta de los siguientes datos: arquitectura y marca del procesador, nombre y versión del sistema operativo, un listado de los procesos que están corriendo (nombre del proceso, id del proceso y usuario que lo ejecuta), listado de usuarios con una sesión abierta en el sistema (id del proceso y nombre del usuario), la fecha y hora en que fue obtenida la información y la dirección ip del servidor.
 
