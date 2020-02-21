@@ -26,7 +26,7 @@ La base de datos cuenta con 3 tablas de almacenamiento:
 * ```Usuarios_activos```: contiene ip del servidor,  fecha y hora en que se envió la información, nombre del usuario activo, id de proceso e identificador del registro generado en la tabla Servers.
 
 ### Estructura general
-![](imagees/estructura.jpg)
+![](images/estructura.jpg)
 La Base de datos SQLite, los agentes y la API
 
 ### DER de la base de datos
