@@ -38,7 +38,7 @@ La Base de datos SQLite, los agentes y la API
 
 El método POST/servers recibe como parámetro un objeto json con el siguiente modelo:
 
-![](images/model.jpg)
+![](images/model.png)
 
 Devuelve como status el código 201 si pudo crear el servidor en la base de datos.
 Si ocurre algún error, devuelve como status el código 400
