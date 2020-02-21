@@ -26,11 +26,12 @@ La base de datos cuenta con 3 tablas de almacenamiento:
 * ```Usuarios_activos```: contiene ip del servidor,  fecha y hora en que se envió la información, nombre del usuario activo, id de proceso e identificador del registro generado en la tabla Servers.
 
 ### Estructura general
-
+![] (images/estruct.jpg)
 La Base de datos SQLite, los agentes y la API
 
 ### DER de la base de datos
- 
+![] (images/der.jpg)
+
 # API Rest
 
 ## Endpoints
@@ -39,4 +40,5 @@ El método POST/servers recibe como parámetro un objeto json con el siguiente m
 
 Devuelve como status el código 201 si pudo crear el servidor en la base de datos.
 Si ocurre algún error, devuelve como status el código 400
+
 
