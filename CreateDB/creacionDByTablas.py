@@ -1,7 +1,9 @@
 import sqlalchemy as db
 import pandas as pd
+import os
 
-engine = db.create_engine('sqlite:///testServers.sqlite') #Create test.sqlite automatically
+os.chdir("..")
+engine = db.create_engine('sqlite:///API/DBServers.sqlite') #Create DBServers.sqlite automatically
 connection = engine.connect()
 metadata = db.MetaData()
 

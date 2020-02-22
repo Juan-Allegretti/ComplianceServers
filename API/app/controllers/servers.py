@@ -44,7 +44,7 @@ def create_new_server():
 		
 		#################  CONEXION A LA BASE DE DATOS  ################
 		#Create test.sqlite automatically
-		engine = db.create_engine('sqlite:///testServers.sqlite')
+		engine = db.create_engine('sqlite:///DBServers.sqlite')
 		connection = engine.connect()
 		metadata = db.MetaData()
 		
