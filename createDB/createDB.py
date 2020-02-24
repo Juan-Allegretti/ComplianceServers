@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 os.chdir("..")
-engine = db.create_engine('sqlite:///API/storage/database/servers.sqlite') #Create test.sqlite automatically
+engine = db.create_engine('sqlite:///API/storage/database/servers.sqlite') 
 connection = engine.connect()
 metadata = db.MetaData()
 
@@ -39,4 +39,4 @@ usersTab = db.Table('usuarios_activos', metadata,
 			db.Column('pid', db.Integer())
 			)
 
-metadata.create_all(engine) #Creates the table
+metadata.create_all(engine) #CREAR BD
