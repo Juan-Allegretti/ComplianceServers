@@ -12,8 +12,7 @@ parser.read('config.ini')
 
 
 procesos = []
-#url = 'http://192.168.1.111:8080/servers'
-#url = 'http://192.168.1.106:8080/servers'
+
 url = str("http://"+ parser.get('api', 'ip')+":" + parser.get('api', 'puerto')+"/servers")
 
 #OBTENGO INFORMACION DEL PROCESADOR
@@ -37,7 +36,6 @@ def get_ip():
             			return j['addr']
 ipaddress = get_ip()
 
-#myobj = {'Arq':arqui}
 
 #OBTENGO INFORMACION DE LOS PROCESOS CORRIENDO
 for proc in psutil.process_iter():
