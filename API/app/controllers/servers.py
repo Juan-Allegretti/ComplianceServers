@@ -32,7 +32,9 @@ def create_new_server():
 		today = str(date.today())
 		#print(today) 
 
-		archivo=str(new_server['ipaddress'])+"_"+today+".txt"
+		##################  ESCRITURA JSON EN TXT  ################
+
+		archivo=str("storage/text/"+ new_server['ipaddress'])+"_"+today+".txt"
 		f=open(archivo,"w+")
 		f.write(json.dumps(new_server, indent=3))
 		f.close()
@@ -44,7 +46,7 @@ def create_new_server():
 		
 		#################  CONEXION A LA BASE DE DATOS  ################
 		#Create test.sqlite automatically
-		engine = db.create_engine('sqlite:///DBServers.sqlite')
+		engine = db.create_engine('sqlite:///storage/database/servers.sqlite')
 		connection = engine.connect()
 		metadata = db.MetaData()
 		
@@ -92,7 +94,7 @@ def create_new_server():
 				id_serv=id_servidor
 				)
 			ResultProxy = connection.execute(queryUsers)
-		#connection.commit()
+		
 		
 		###############################################################
 
