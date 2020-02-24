@@ -32,10 +32,10 @@ La Base de datos SQLite, los agentes y la API
 ### DER de la base de datos
 ![](images/DER.jpg)
 
-### Instalación y ejecución
-En primer lugar, se debe crear la BD. Para ello, ejecutar el script createDB.py ubicado en ```/createDB```. Se generará un archivo en ```API/storage/database``` llamado servers.sqlite
-Luego iniciar la API, ejecutando el script init_app.py ubicado en ```/API```.
-Una vez iniciado, ejecutar el script agente.py en el servidor ubicado en ```/API```. Modificar la IP donde se ejecuta la API previamente el archivo config.ini.
+## Instalación y ejecución
+* En primer lugar, se debe crear la BD. Para ello, ejecutar el script createDB.py ubicado en ```/createDB```. Se generará un archivo en ```API/storage/database``` llamado servers.sqlite
+* Luego iniciar la API, ejecutando el script init_app.py ubicado en ```/API```.
+* Una vez iniciado, ejecutar el script agente.py en el servidor ubicado en ```/API```. Modificar la IP donde se ejecuta la API previamente el archivo config.ini.
 
 # API Rest
 
