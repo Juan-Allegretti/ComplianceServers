@@ -6,9 +6,9 @@ Aplicación para obtener y centralizar información de los servidores que se enc
 
 ## Estructura del proyecto
 
-* ```/Agente```: Contiene un script que se ejecuta en los servidores y envía información de estos a la API.
-* ```/API```: Contiene el script inicializador y los archivos de configuración de la aplicación junto con los controllers/routers inherentes a la API.
-* ```/CreateDB```: Contiene el script de creación de la base de datos normalizada.
+* ```/agente```: Contiene un script que se ejecuta en los servidores y envía información de estos a la API.
+* ```/API```: Contiene el script inicializador y los controllers/routers de la API.
+* ```/createDB```: Contiene el script de creación de la base de datos normalizada.
 
 
 ## Funcionamiento
@@ -21,9 +21,9 @@ La API recibe esta información y la almacena en un archivo de texto plano en fo
 
 La base de datos cuenta con 3 tablas de almacenamiento:
 
-* ```Servers```: contiene ip del servidor, fecha y hora en que se envió la información, arquitectura y marca del procesador, nombre y versión del sistema operativo.
-* ```Procesos```: contiene ip del servidor,  fecha y hora en que se envió la información, id y nombre del procesos en ejecución, usuario que ejecutó el proceso e identificador del registro generado en la tabla Servers.
-* ```Usuarios_activos```: contiene ip del servidor,  fecha y hora en que se envió la información, nombre del usuario activo, id de proceso e identificador del registro generado en la tabla Servers.
+* ```servers```: contiene ip del servidor, fecha y hora en que se envió la información, arquitectura y marca del procesador, nombre y versión del sistema operativo.
+* ```procesos```: contiene ip del servidor,  fecha y hora en que se envió la información, id y nombre del procesos en ejecución, usuario que ejecutó el proceso e identificador del registro generado en la tabla Servers.
+* ```usuarios_activos```: contiene ip del servidor,  fecha y hora en que se envió la información, nombre del usuario activo, id de proceso e identificador del registro generado en la tabla Servers.
 
 ### Estructura general
 La Base de datos SQLite, los agentes y la API
@@ -31,6 +31,11 @@ La Base de datos SQLite, los agentes y la API
 
 ### DER de la base de datos
 ![](images/DER.jpg)
+
+### Instalación y ejecución
+En primer lugar, se debe crear la BD. Para ello, ejecutar el script createDB.py ubicado en ```/createDB```. Se generará un archivo en ```API/storage/database``` llamado servers.sqlite
+Luego iniciar la API, ejecutando el script init_app.py ubicado en ```/API```.
+Una vez iniciado, ejecutar el script agente.py en el servidor ubicado en ```/API```. Modificar la IP donde se ejecuta la API previamente el archivo config.ini.
 
 # API Rest
 
