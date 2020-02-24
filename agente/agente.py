@@ -5,11 +5,16 @@ import psutil
 import netifaces
 import cpuinfo
 from datetime import datetime
+from configparser import ConfigParser
+
+parser = ConfigParser()
+parser.read('config.ini')
 
 
 procesos = []
 #url = 'http://192.168.1.111:8080/servers'
-url = 'http://192.168.1.106:8080/servers'
+#url = 'http://192.168.1.106:8080/servers'
+url = str("http://"+ parser.get('api', 'ip')+":" + parser.get('api', 'puerto')+"/servers")
 
 #OBTENGO INFORMACION DEL PROCESADOR
 arquitectura_proc=cpuinfo.get_cpu_info()['arch']
