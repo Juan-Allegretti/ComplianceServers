@@ -39,9 +39,9 @@ La Base de datos SQLite, los agentes y la API
 
 * Para el correcto funcionamiento de ```agente.py``` son necesarias las librerías ```psutil```, ```netifaces```, ```cpuinfo```, ```datetime``` y ```requests``` en python3.
 * Para el correcto funcionamiento de la API son necesarias las librerías ```flask```, ```json```, ```sqlalchemy``` y ```datetime``` en python3.
-* Para el correcto funcionamiento de ```createDB.py``` son necesarias las librerías ```sqlalchemy``` y ```pandas``` en python3.
+* Para el correcto funcionamiento de ```createDB.py``` son necesarias las librerías ```sqlalchemy``` y ```pandas``` en python3.\n
 
-** Para la ejecución de scripts e instalación de librerías también se pueden usar los scripts ```createDB.py```, ```agente.sh``` y ```init_app.sh```.
+Para la ejecución de scripts e instalación de librerías también se pueden usar los scripts ```createDB.py```, ```agente.sh``` y ```init_app.sh```.
 ## API Rest
 
 ### Endpoints
