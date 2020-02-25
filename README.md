@@ -19,17 +19,20 @@ El agente envía esta información en formato JSON realizando un request POST.
 
 La API recibe esta información y la almacena en un archivo de texto plano en formato JSON y también en una base de datos normalizada.
 
+### Estructura general
+La Base de datos SQLite, los agentes y la API
+![](images/estructura.jpg)
+
+### Base de datos
+El sistema de base de datos utilizados es SQLite debido a su flexibilidad y buen rendimiento para aplicaciones pequeñas aunque si se desea obtener mayor manejo de datos y rendimiento se propone implementar MySQL para mayor escalabilidad y alto rendimiento.
+
 La base de datos cuenta con 3 tablas de almacenamiento:
 
 * ```servers```: contiene ip del servidor, fecha y hora en que se envió la información, arquitectura y marca del procesador, nombre y versión del sistema operativo.
 * ```procesos```: contiene ip del servidor,  fecha y hora en que se envió la información, id y nombre del procesos en ejecución, usuario que ejecutó el proceso e identificador del registro generado en la tabla Servers.
 * ```usuarios_activos```: contiene ip del servidor,  fecha y hora en que se envió la información, nombre del usuario activo, id de proceso e identificador del registro generado en la tabla Servers.
 
-### Estructura general
-La Base de datos SQLite, los agentes y la API
-![](images/estructura.jpg)
-
-### DER de la base de datos
+#### DER
 ![](images/DER.jpg)
 
 ## Instalación y ejecución
