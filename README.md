@@ -19,6 +19,7 @@ La API recibe esta información y la almacena en un archivo de texto plano en fo
 
 ### Estructura general
 La Base de datos SQLite, los agentes y la API
+
 ![](images/estructura.jpg)
 
 ### Base de datos
@@ -31,6 +32,7 @@ La base de datos cuenta con 3 tablas de almacenamiento:
 * ```usuarios_activos```: contiene ip del servidor,  fecha y hora en que se envió la información, nombre del usuario activo, id de proceso e identificador del registro generado en la tabla Servers.
 
 #### DER
+
 ![](images/DER.jpg)
 
 ## Instalación y ejecución
