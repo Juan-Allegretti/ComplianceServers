@@ -17,14 +17,14 @@ El programa agente obtiene información del servidor y la envía a la API. La in
 
 El agente envía esta información en formato JSON realizando un request POST.
 
-La API recibe esta información y la almacena en un archivo de texto plano en formato JSON y también en una base de datos normalizada.
+La API recibe esta información y la almacena en un archivo de texto plano en formato JSON (ubicado en ```/API/storage/texto``` y también en una base de datos normalizada.
 
 ### Estructura general
 La Base de datos SQLite, los agentes y la API
 ![](images/estructura.jpg)
 
 ### Base de datos
-El sistema de base de datos utilizados es SQLite debido a su flexibilidad y buen rendimiento para aplicaciones pequeñas aunque si se desea obtener mayor manejo de datos y rendimiento se propone implementar MySQL para mayor escalabilidad y alto rendimiento.
+El sistema de base de datos utilizados es SQLite debido a su flexibilidad y buen rendimiento para aplicaciones pequeñas, aunque si se desea obtener mayor manejo de datos y rendimiento, se propone implementar MySQL que ofrece mayor escalabilidad, seguridad de datos y alto rendimiento.
 
 La base de datos cuenta con 3 tablas de almacenamiento:
 
