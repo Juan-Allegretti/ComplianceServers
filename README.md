@@ -33,9 +33,14 @@ La Base de datos SQLite, los agentes y la API
 ![](images/DER.jpg)
 
 ## Instalación y ejecución
-* En primer lugar, se debe crear la BD. Para ello, ejecutar el script ```createDB.py``` ubicado en ```/createDB```. Se generará un archivo en ```API/storage/database``` llamado ```servers.sqlite```
-* Luego iniciar la API, ejecutando el script ```init_app.py``` ubicado en ```/API```.
-* Una vez iniciado, en el servidor ejecutar el script ```agente.py``` ubicado en ```/agente```. Previamente, modificar la IP donde se ejecuta la API en el archivo ```config.ini``` ubicado en ```/agente```
+* En primer lugar, se debe crear la BD. Para ello, ejecutar el script ```createDB.py``` ubicado en ```/createDB``` con python3. Se generará un archivo en ```API/storage/database``` llamado ```servers.sqlite```
+* Luego iniciar la API, ejecutando el script ```init_app.py``` ubicado en ```/API``` con python3.
+* Una vez iniciado, en el servidor ejecutar el script ```agente.py``` ubicado en ```/agente``` con python3. Previamente, modificar la IP donde se ejecuta la API en el archivo ```config.ini``` ubicado en ```/agente```.
+
+Para el correcto funcionamiento de ```agente.py``` son necesarias las librerías ```psutil```, ```netifaces```, ```cpuinfo```, ```datetime``` y ```requests``` en python3.
+Para el correcto funcionamiento de la API son necesarias las librerías ```flask```, ```json```, ```sqlalchemy``` y ```datetime``` en python3.
+Para el correcto funcionamiento de ```createDB.py``` son necesarias las librerías ```sqlalchemy``` y ```pandas``` en python3.
+
 
 ## API Rest
 
