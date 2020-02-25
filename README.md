@@ -57,4 +57,6 @@ El método POST/servers recibe como parámetro un objeto JSON con el siguiente m
 Devuelve como status el código 201 si pudo crear el servidor en la base de datos.
 Si ocurre algún error, devuelve como status el código 400
 
+## Autor
 
+Juan Allegretti [Git-Juan](https://github.com/Git-Juan)
