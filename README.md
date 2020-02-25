@@ -59,4 +59,4 @@ Si ocurre algún error, devuelve como status el código 400
 
 ## Autor
 
-Juan Allegretti [Git-Juan](https://github.com/Git-Juan)
+Juan Allegretti - [Git-Juan](https://github.com/Git-Juan)
