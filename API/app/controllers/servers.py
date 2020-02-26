@@ -14,7 +14,7 @@ servers = []
 @bp.route("/", methods=['POST'])
 def create_new_server():
 	try:
-	#print(request.json)
+	
 		content_to_json = request.json
 		
 		new_server={	
@@ -28,9 +28,9 @@ def create_new_server():
 			"fecha_hora": content_to_json['fecha_hora']
 		}
 
-		#servers.append(new_server)
+		
 		today = str(date.today())
-		#print(today) 
+		 
 
 		##################  ESCRITURA JSON EN TXT  ################
 
@@ -40,7 +40,7 @@ def create_new_server():
 		f.close()
 
 		print (json.dumps(new_server, indent=3))
-		#print (content_to_json)
+		
 
 		fecha = datetime.strptime(new_server['fecha_hora'],'%Y-%m-%d %H:%M:%S.%f')
 		
